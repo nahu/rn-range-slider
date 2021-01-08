@@ -93,7 +93,7 @@ const Slider = (
   }, [disableRange, highThumbX]);
 
   const railContainerStyles = useMemo(() => {
-    return [styles.railsContainer, { marginHorizontal: thumbWidth / 2 }];
+    return [styles.railsContainer];
   }, [thumbWidth]);
 
   const [labelView, labelUpdate] = useThumbFollower(containerWidthRef, gestureStateRef, renderLabel, isPressed, allowLabelOverflow);
